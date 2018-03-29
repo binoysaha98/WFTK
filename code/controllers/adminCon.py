@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 from flask import render_template
 from models.adminModel import adminModel
-
+from SessionManager import SessionManager
 
 class adminCon:
 
     def __init__(self, con, cur):
+        SessionManager().get_session()
         self.con = con
         self.cur = cur
         print('admin Controller constructor')

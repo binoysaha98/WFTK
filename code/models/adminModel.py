@@ -10,12 +10,6 @@ class adminModel:
         sites = data.fetchall()
         return self.zip_data(self.cur, sites)
 
-    def create_connection(self):
-        cur = db.execute('select * from binoy.employee')
-        entries = cur.fetchall()
-        for result in entries:
-            print(result)
-
     def zip_data(self, cur, rows):
         print('Zipping data')
         columns = [i[0].lower() for i in cur.description]
