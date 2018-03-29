@@ -1,0 +1,23 @@
+class adminModel:
+    def __init__(self, con, cur):
+        print("Admin model constructor")
+        self.con = con
+        self.cur = cur
+
+    def index(self):
+        print('admin model index')
+        data = self.cur.execute('select * from binoy.site');
+        sites = data.fetchall()
+        return self.zip_data(self.cur, sites)
+
+    def create_connection(self):
+        cur = db.execute('select * from binoy.employee')
+        entries = cur.fetchall()
+        for result in entries:
+            print(result)
+
+    def zip_data(self, cur, rows):
+        print('Zipping data')
+        columns = [i[0].lower() for i in cur.description]
+        return [dict(zip(columns, row)) for row in rows]
+

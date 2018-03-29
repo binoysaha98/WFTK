@@ -1,0 +1,12 @@
+create table employee (id number(10),name varchar(20),age number(3),city varchar(20),gender varchar(12),contact number(10), primary key(id));
+
+create table money (id number(10),description varchar(140),dte date,amount number(20), emp_id number(10) references employee(id), primary key(id));
+
+create table site (id number(10),address varchar(20),work_type varchar(20),primary key(id));
+
+create table attendance (id number(10),dte date,description varchar(140),remark varchar(20), emp_id number(10) references employee(id),  site_id number(10) references site(id),primary key(id));
+
+create table emp_site (emp_id number(10) references employee(id),  site_id number(10) references site(id));
+
+create table supervisor (id number(10),name varchar(20),contact number(10), site_id number(10) references site(id));
+

@@ -1,0 +1,19 @@
+{% extends "layouts/nav_bar.html" %}
+
+{% block body %}
+		
+	<div class = "container">	
+		<h1>Registered Sites</h1>
+		<ul>
+			{% for site in sites %}
+			<li>
+				Address : {{site.address}}
+				<br>
+				WorkType : {{site.work_type}}
+			</li>	
+			{% endfor %}	
+		</ul>
+	</div>
+
+{% endblock %}
+
