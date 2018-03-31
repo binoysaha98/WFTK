@@ -1,0 +1,79 @@
+{% extends "layouts/nav_bar.html" %}
+
+{% block body %}
+		<div class="container">
+			<h2>Last Month Attendance</h2>
+			<div class="bs-example">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <span data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. What is HTML?</span>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <table style="text-align:center;" class="table table-hover table-striped ">
+		    <tbody>
+		      <tr>
+				  <td><span style=""></span><img class="wrong"><br><span></span>01/02/13</td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		        <td><span style="">1 :</span><img class="wrong""></td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		      </tr>
+			<tr>
+		      	<td><span style=""></span><img class="wrong"><br>01/02/13</td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		        <td><span style="">1 :</span><img class="wrong""></td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		        <td><span style="">1 :</span><img class="wrong"></td>
+		      </tr>
+		     </tbody>
+		  </table>
+		  
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <span data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. What is Bootstrap?</span>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <span data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. What is CSS?</span>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="dist/js/bootstrap-checkbox.min.js" defer></script>
+		<script>
+			$(document).ready(function(){
+		$(".wrong").attr('src','static/wrong.png');
+		$(".tick").attr('src','static/tick.png');
+	});
+
+		</script>
+{% endblock %}

@@ -1,0 +1,173 @@
+{% extends "layouts/nav_bar.html" %}
+
+{% block body %}
+		
+	<div class = "container">	
+		<h1>Registered Sites</h1>
+		<ul>
+			{% for site in sites %}
+			<li>
+				Address : {{site.address}}
+				<br>
+				WorkType : {{site.work_type}}
+			</li>	
+			{% endfor %}	
+		</ul>
+	</div>
+
+	<div class="container">
+            <div class="jumbotron">
+                <center>
+                    <h1>WorkForce TimeKeeper</h1>
+                </center>
+            </div>
+        </div>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h1>Sites</h1>
+                    <hr style="margin-top:-5px;">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a style="text-decoration:none" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Location Site 1</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body" style="padding:20px 45px;">
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 1 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 2 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 3 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 4 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 5 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 6 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:40px" data-toggle="modal" data-target="#myModal">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:100%;">
+                                            <center><i style="margin-top:13px;" class="fa fa-plus"></i></center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a style="text-decoration:none" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Location Site 2</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body" style="padding:20px 45px;">
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 1 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                    <div style="display:inline-block;border:1px solid gray;width:250px">
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:85%;" data-toggle="modal" data-target="#myModal">
+                                            <center>Worker 2 Name</center>
+                                        </div>
+                                        <div style="display:inline-block;height:40px;line-height:40px;float:left;width:15%;border-left:1px solid gray">
+                                            <center><i style="margin-top:13px;" class="fa fa-times"></i></center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h1>Create Site</h1>
+                    <hr style="margin-top:-5px;">
+                    <form>
+                        <div class="form-group">
+                            <label for="add">Site Address :</label>
+                            <input class="form-control" id="add">
+                        </div>
+                        <div class="form-group">
+                            <label for="workType">Work Type :</label>
+                            <input class="form-control" id="workType">
+                        </div>
+                        <button class="btn btn-default">Add Site</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+
+        </script>
+
+{% endblock %}
+

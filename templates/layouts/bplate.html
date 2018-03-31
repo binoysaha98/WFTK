@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>WorkForce TimeKeeper</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 		<script src="http://vsn4ik.github.io/bootstrap-checkbox/dist/js/bootstrap-checkbox.min.js" ></script>
+		{% block nav %}
+		{% endblock %}
+		 <script>
+		$("#logout").click(function(){
+		 	 $.ajax({url: "/logout", success: function(result){
+				console.log('Bro you just got logged out');
+			}});
+		 });
+		$("#myModal").on('hidden.bs.modal',function(){
+			$("body").css('padding','0px');
+		});
+		</script>
+		</body>
+</html>

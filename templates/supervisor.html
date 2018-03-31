@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WorkForce TimeKeeper</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	</head>
+	<body>
+		
+		<div class="container">
+		  <h2>Employee Attendance</h2>                                                                                      
+		  <div class="table-responsive">          
+		  <table style="text-align:center;" class="table table-hover table-striped ">
+		    <thead>
+		      <tr >
+		        <th style="text-align: center" >Employee Name</th>
+		        <th style="text-align: center">13/02/18</th>
+		        <th style="text-align: center">14/02/18</th>
+		        <th style="text-align: center">15/02/18</th>
+		        <th style="text-align: center">13/02/18</th>
+		        <th style="text-align: center">14/02/18</th>
+		        <th style="min-width:125px;text-align: center">Today</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    <form>
+		      <tr>
+		        <td>Binoy</td>
+		        <td><img class="wrong" ></td>
+		        <td><img class="tick"></td>
+		        <td><img class="wrong"></td>
+		        <td><img class="wrong"></td>
+		        <td><img class="tick"></td>
+		      	<td><input value="Binoy" type="checkbox"></td>
+		      </tr>
+		      <tr>
+		        <td>Sandeep</td>
+		        <td><img class="wrong"></td>
+		        <td><img class="wrong"></td>
+		        <td><img class="tick"></td>
+		        <td><img class="wrong"></td>
+		        <td><img class="tick"></td>
+		     	<td><input value="Sandeep" type="checkbox"></td>
+		      </tr>
+		     </form>
+		     </tbody>
+		  </table>
+		  </div>
+			 <button id="submit" class="btn btn-primary">Submit</button>
+		 
+		</div>
+
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+ 		<script src="http://vsn4ik.github.io/bootstrap-checkbox/dist/js/bootstrap-checkbox.min.js" ></script>
+		<script>
+	$(document).ready(function(){
+		$(':checkbox').checkboxpicker({onLabel:"YES",offLabel:"NO"});
+		$(".wrong").attr('src','static/wrong.png');
+		$(".tick").attr('src','static/tick.png');
+	});
+	$("#submit").click(function(){
+		$("input[type='checkbox']").each(function(v){
+			
+				alert($(this).prop('checked'));
+				alert($(this).val());
+			
+		});
+	});
+</script>
+
+	</body>
+</html>
